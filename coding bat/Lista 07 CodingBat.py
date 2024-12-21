@@ -6,27 +6,19 @@
 # retorna uma string com n cópias da string original
 # multstring('Hi', 2) -> 'HiHi'
 def multstring(s, n):
-  string = ''
-  for i in range(n):
-    string  = s + string
-  return string
+  return
 
 # B. string_splosion
 # string_splosion('Code') -> 'CCoCodCode'
 # string_splosion('abc') -> 'aababc'
 # string_splosion('ab') -> 'aab'
 def string_splosion(s):
-  string = ''
-  for i in range(len(s)):
-    string = string + s[:i]
-  string = string  + s
-  return string
+  return
 
 # C. array_count9
 # conta quantas vezes aparece o 9 numa lista nums
 def array_count9(nums):
-    x = nums.count(9)
-    return x
+    return
 
 # D. array_front9
 # verifica se pelo menos um dos quatro primeiros é nove
@@ -34,10 +26,7 @@ def array_count9(nums):
 # array_front9([1, 2, 3, 4, 9]) -> False
 # array_front9([1, 2, 3, 4, 5]) -> False
 def array_front9(nums):
-  if 9 in nums[:4]:
-    return True
-  else:
-    return False
+  return
 
 
 
@@ -47,14 +36,14 @@ def array_front9(nums):
 # hello_name('Alice') -> 'Hello Alice!'
 # hello_name('X') -> 'Hello X!'
 def hello_name(name):
-  return f'Hello {name}!'
+  return 
 
 # F. make_tags
 # make_tags('i', 'Yay'), '<i>Yay</i>'
 # make_tags('i', 'Hello'), '<i>Hello</i>'
 # make_tags('cite', 'Yay'), '<cite>Yay</cite>'
 def make_tags(tab, word):
-  return  '<{}>{}</{}>'.format(tab,word,tab)
+  return 
 
 # G. extra_end
 # seja um string s com no mínimo duas letras
@@ -63,10 +52,7 @@ def make_tags(tab, word):
 # extra_end('ab'), 'ababab'
 # extra_end('Hi'), 'HiHiHi'  
 def extra_end(s):
-  string = ''
-  if len(s) >= 2:
-    string = (string + (s[-2:])) * 3
-  return  string
+  return
 
 # H. first_half
 # seja uma string s
@@ -75,10 +61,7 @@ def extra_end(s):
 # first_half('HelloThere') -> 'Hello'
 # first_half('abcdef') -> 'abc'
 def first_half(s):
-  string = ''
-  x = int(len(s)/2)
-  string = s[0:x]
-  return string
+  return
 
 # I. sem_pontas
 # seja uma string s de pelo menos dois caracteres
@@ -87,10 +70,7 @@ def first_half(s):
 # without_end('python') -> 'ytho'
 # without_end('coding') -> 'odin'
 def sem_pontas(s):
-  string = ''
-  if len(s) >= 2:
-    string = s[1:-1]
-  return string
+  return
 
 # J. roda2
 # rodar uma string s duas posições
@@ -98,10 +78,7 @@ def sem_pontas(s):
 # left2('Hello') -> 'lloHe'
 # left2('Hi') -> 'Hi'
 def roda2(s):
-  string = ''
-  if len(s) >= 2:
-    string = s[2:] + s[:2]
-  return string
+  return
 
 
 # Provided simple test() function used in main() to print

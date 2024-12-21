@@ -7,10 +7,7 @@
 # first_last6([6, 1, 2, 3]) -> True
 # first_last6([3, 2, 1]) -> False
 def first_last6(nums): #
-  if nums[0] == 6 or nums[-1] == 6:
-    return True
-  else:
-    return False
+  return
 
 
 # B. same_first_last #
@@ -22,10 +19,7 @@ def first_last6(nums): #
 # same_first_last([1, 2, 3, 1]) -> True
 # same_first_last([1, 2, 1]) -> True
 def same_first_last(nums):
-  if len(nums) > 0 and nums[0] == nums[-1]:
-    return True
-  else:
-    return False
+  return
 
 # C. common_end #
 # Dada duas listas a e b verifica se os dois primeiros são
@@ -35,10 +29,7 @@ def same_first_last(nums):
 # common_end([1, 2, 3], [7, 3, 2]) -> False
 # common_end([1, 2, 3], [1, 3]) -> True
 def common_end(a, b):
-  if a[0] == b[0] or a[-1] == b[-1]:
-    return True
-  else:
-    return False
+  return
 
 # D. maior_ponta #
 # Dada uma lista não vazia, cria uma nova lista onde todos
@@ -47,8 +38,7 @@ def common_end(a, b):
 # maior_ponta([1, 2, 3]) -> [3, 3, 3]
 # maior_ponta([1, 3, 2]) -> [2, 2, 2]
 def maior_ponta(nums):
-  lista1 = [max(nums[0], nums[-1])] * len(nums)
-  return lista1
+  return
 
 
 # E. sum2 #
@@ -56,7 +46,7 @@ def maior_ponta(nums):
 # retorna a soma dos dois primeiros elementos
 # se a lista tiver menos de dois elementos, soma o que for possível
 def sum2(nums):
-  return sum (nums[:2])
+  return
 
 # F. middle_way #
 # sejam duas listas de inteiros a e b
@@ -66,8 +56,7 @@ def sum2(nums):
 # middle_way([7, 7, 7], [3, 8, 0]) -> [7, 8]
 # middle_way([5, 2, 9], [1, 4, 5]) -> [2, 4]
 def middle_way(a, b):
-  lista = [a[len(a)//2], b[len(b)//2]]
-  return lista
+  return
 
 # G. date_fashion
 # você e sua namorada(o) vão a um restaurante
@@ -84,12 +73,7 @@ def middle_way(a, b):
 # date_fashion(5, 2) -> 0
 # date_fashion(5, 5) -> 1
 def date_fashion(eu, par):
-  if eu <= 2 or par <= 2:
-    return 0
-  elif eu >= 8 or par >= 8:
-    return 2
-  else:
-    return 1
+  return
 
 # H. squirrel_play
 # os esquilos na FATEC brincam quando a temperatura está entre 60 e 90
@@ -100,12 +84,7 @@ def date_fashion(eu, par):
 # squirrel_play(95, False) -> False
 # squirrel_play(95, True) -> True
 def squirrel_play(temp, is_summer):
-  if not is_summer and temp >= 60 and temp <= 90:
-    return True
-  elif is_summer and temp >= 60 and temp <= 100:
-    return True
-  else:
-    return False
+  return
 
 # I. pego_correndo
 # você foi pego correndo
@@ -121,16 +100,7 @@ def squirrel_play(temp, is_summer):
 # pego_correndo(65, False) -> 1
 # pego_correndo(65, True) -> 0 
 def pego_correndo(speed, is_birthday):
-  if not is_birthday and speed <= 60:
-    return 0
-  if is_birthday and speed <= 65:
-    return 0
-  if not is_birthday and speed >= 61 and speed <= 80:
-    return 1
-  if is_birthday and speed >= 66 and speed <= 85:
-    return 1
-  else:
-    return 2
+  return
 
 # J. alarm_clock #
 # day: 0=domingo, 1=segunda, 2=terça, ..., 6=sábado
@@ -145,16 +115,7 @@ def pego_correndo(speed, is_birthday):
 # alarm_clock(5, False) -> '7:00'
 # alarm_clock(0, False) -> '10:00'
 def alarm_clock(day, vacation):
-  if vacation:
-    if day in (1, 5) or day == 3:
-      return '10:00'
-    if day == 0 or day == 6:
-      return 'off'
-  elif not vacation:
-    if day in (1, 5):
-      return '7:00'
-    elif day == 0 or day == 6:
-      return '10:00'
+  return
 
 # Provided simple test() function used in main() to print
 # what each function returns vs. what it's supposed to return.

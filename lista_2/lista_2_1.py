@@ -16,7 +16,6 @@ def tipo_triangulo(x, y, z):
         return "Escaleno"
     return "Isóceles"
 
-
 lado_1 = randint(1, 10)
 lado_2 = randint(1, 10)
 lado_3 = randint(1, 10)

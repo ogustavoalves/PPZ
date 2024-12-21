@@ -2,8 +2,6 @@ from random import randint
 
 peso_peixe = randint(1, 100)
 
-
-
 def calc_multa(peso):
     multa = 0
     excesso = 0

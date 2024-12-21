@@ -12,23 +12,14 @@
 # adiciona 'ing' no final
 # Caso a string já termine em 'ing', acrescentará 'ly'.
 def verbing(s):
-  if 'ing' in s:
-    return s + 'ly'
-  elif len(s) >= 3:
-      return s + 'ing'
-  else:
-    return s
+  return
 
 # H. not_bad
 # Dada uma string, procura a primeira ocorrência de 'not' e 'bad'
 # Se 'bad' aparece depois de 'not' troca 'not' ... 'bad' por 'good'
 # Assim 'This dinner is not that bad!' retorna 'This dinner is good!'
 def not_bad(s):
-  n = s.find('not')
-  b = s.find('bad')
-  if b > n:
-    s = s[:n] + 'good' + s[b+3:]
-  return s
+  return
 
 # I. inicio_final
 # Divida cada string em dois pedaços.
@@ -38,45 +29,26 @@ def not_bad(s):
 # Dadas 2 strings, a e b, retorna a string
 # a_inicio + b_inicio + a_final + b_final
 def inicio_final(a, b):
-  a_meio = len(a) // 2
-  b_meio = len(b) // 2
-  if len(a) % 2 == 1:  
-    a_meio = a_meio + 1
-  if len(b) % 2 == 1:
-    b_meio = b_meio + 1 
-  return a[:a_meio] + b[:b_meio] + a[a_meio:] + b[b_meio:]
+  return
 
 # J. zeros finais
 # Verifique quantos zeros há no final de um número inteiro positivo
 # Exemplo: 10010 tem 1 zero no fim e 908007000 possui três
 def zf(n):
-  n = str(n)
-  n = n[::-1]
-  cont = 0
-  while n[cont] == '0':
-      cont += 1
-  return cont 
+  return
 
 # K. conta 2
 # Verifique quantas vezes o dígito 2 aparece entre 0 e n-1
 # Exemplo: para n = 20 o dígito 2 aparece duas vezes entre 0 e 19
 def conta2(n):
-  k = " "
-  for i in range(n):
-    k = k + str(i)
-  return k.count('2')
+  return
 
 # L. inicio em potencia de 2
 # Dado um número inteiro positivo n retorne a primeira potência de 2
 # que tenha o início igual a n
 # Exemplo: para n = 65 retornará 16 pois 2**16 = 65536
 def inip2(n):
-  c = 0
-  while True:
-    p = str(2 ** c)
-    if p.startswith(str(n)):
-      return c
-    c += 1
+  return
 
 def test(obtido, esperado):
   if obtido == esperado:

@@ -7,14 +7,7 @@
 # você pode ficar dormindo quando é feriado ou não é dia semana
 # retorne True ou False conforme você vá dormir ou não
 def dormir(dia_semana, feriado):
-    if not dia_semana and not feriado:
-        return True
-    elif dia_semana and not feriado:
-        return False
-    elif not dia_semana and feriado:
-        return True
-    else:
-        return True
+    return 
 
 
 # B. alunos_problema
@@ -23,10 +16,7 @@ def dormir(dia_semana, feriado):
 # temos problemas quando ambos estão sorrindo ou ambos não estão sorrindo
 # retorne True quando houver problemas
 def alunos_problema(a_sorri, b_sorri):
-    if a_sorri == b_sorri:
-        return True
-    else:
-        return False
+    return 
 
 
 # C. soma_dobro
@@ -35,10 +25,7 @@ def alunos_problema(a_sorri, b_sorri):
 # soma_dobro(1, 2) -> 3
 # soma_dobro(2, 2) -> 8
 def soma_dobro(a, b):
-    if a == b:
-        return (a + b) * 2
-    else:
-        return (a + b)
+    return
 
 
 # D. diff21
@@ -48,10 +35,7 @@ def soma_dobro(a, b):
 # diff21(25) -> 8
 # dica: abs(x) retorna o valor absoluto de x
 def diff21(n):
-    if n < 21:
-        return 21 - n
-    else:
-        return (n - 21) * 2
+    return
 
 
 # E. papagaio
@@ -60,20 +44,14 @@ def diff21(n):
 # temos problemas se o papagaio estiver falando
 # antes da 7 ou depois das 20
 def papagaio(falando, hora):
-    if falando and (hora < 7 or hora > 20):
-        return True
-    else:
-        return False
+    return
 
 
 # F. dez
 # dados dois inteiros a e b
 # retorna True se um dos dois é 10 ou a soma é 10
 def dez(a, b):
-    if a == 10 or b == 10 or (a + b) == 10:
-        return True
-    else:
-        return False
+    return
 
 
 # G. dista10
@@ -84,10 +62,7 @@ def dez(a, b):
 # dista10(90) -> True
 # dista10(89) -> False
 def dista10(n):
-    if abs(n - 100) <= 10 or abs(n - 200) <= 10:
-        return True
-    else:
-        return False
+    return
 
 
 # H. apaga
@@ -96,8 +71,7 @@ def dista10(n):
 # apaga('kitten', 1) -> 'ktten'
 # apaga('kitten', 4) -> 'kittn'
 def apaga(s, n):
-    string = s[:n] + s[n+1:]
-    return string
+    return
 
 
 # I. troca
@@ -108,11 +82,7 @@ def apaga(s, n):
 # troca('a') -> 'a'
 # troca('ab') -> 'ba'
 def troca(s):
-    if len(s) <= 1:
-        return s
-    else:
-        string = s[-1] + s[1:-1] + s[0]
-        return string
+    return
 
 # Provided simple test() function used in main() to print
 # what each function returns vs. what it's supposed to return.

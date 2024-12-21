@@ -8,7 +8,7 @@
 # near_ten(17) -> False
 # near_ten(19) -> True
 def near_ten(n):
-  return n % 10 <= 2 or n % 10 >= 8
+  return
 
 # B. lone_sum
 # Soma maluca: some os números inteiros a, b, e c
@@ -17,16 +17,7 @@ def near_ten(n):
 # lone_sum(3, 2, 3) -> 2
 # lone_sum(3, 3, 3) -> 0
 def lone_sum(a, b, c):
-  if a == b == c:
-    return 0
-  elif a == b:
-    return c
-  elif b == c:
-    return a
-  elif a == c:
-    return b
-  else:
-    return a + b + c
+  return
 
 # C. luck_sum #
 # Soma três inteiros a, b, c
@@ -35,14 +26,7 @@ def lone_sum(a, b, c):
 # lucky_sum(1, 2, 13) -> 3
 # lucky_sum(1, 13, 3) -> 1
 def lucky_sum(a, b, c):
-  if 13 == a:
-    return 0
-  elif 13 == b:
-    return a
-  elif 13 == c:
-    return a + b
-  else:
-    return a + b + c
+  return
 
 # D. double_char #
 # retorna os caracteres da string original duplicados
@@ -50,8 +34,7 @@ def lucky_sum(a, b, c):
 # double_char('AAbb') -> 'AAAAbbbb'
 # double_char('Hi-There') -> 'HHii--TThheerree'
 def double_char(s):
-  lista = ''.join(x + x for x in s)
-  return lista
+  return
 
 # E. count_hi #
 # conta o número de vezes que aparece a string 'hi'
@@ -59,7 +42,7 @@ def double_char(s):
 # count_hi('ABChi hi') -> 2
 # count_hi('hihi') -> 2
 def count_hi(s):
-  return s.count('hi')
+  return
 
 # F. cat_dog #
 # verifica se o aparece o mesmo número de vezes 'cat' e 'dog'
@@ -67,12 +50,7 @@ def count_hi(s):
 # cat_dog('catcat') -> False
 # cat_dog('1cat1cadodog') -> True
 def cat_dog(s):
-  x = s.count('dog')
-  y = s.count('cat')
-  if y == x:
-    return True
-  else:
-    return False
+  return
 
 # G. count_code #
 # conta quantas vezes aparece 'code'
@@ -82,11 +60,7 @@ def cat_dog(s):
 # count_code('codexxcode') -> 2
 # count_code('cozexxcope') -> 2
 def count_code(s):
-  y = 0
-  for x in range(len(s)-3):
-    if s[x:x+2] == 'co' and s[x+3] == 'e':
-      y = y + 1
-  return y
+  return
 
 # H. end_other #
 # as duas strings devem ser convertidas para minúsculo via lower()
@@ -96,12 +70,7 @@ def count_code(s):
 # end_other('AbC', 'HiaBc') -> True
 # end_other('abc', 'abXabc') -> True
 def end_other(a, b):
-  a = a.lower()
-  b = b.lower()
-  if a.endswith(b) or b.endswith(a):
-    return True
-  else:
-    return False
+  return
 
 
 # I. count_evens
@@ -110,11 +79,7 @@ def end_other(a, b):
 # count_evens([2, 2, 0]) -> 3
 # count_evens([1, 3, 5]) -> 0
 def count_evens(nums):
-  k = 0
-  for x in nums:
-    if x % 2 == 0:
-      k = k + 1
-  return k
+  return
 
 # J. sum13 #
 # retorna a soma dos números de uma lista
@@ -124,10 +89,7 @@ def count_evens(nums):
 # sum13([1, 2, 2, 1, 13]) -> 6
 # sum13([13, 1, 2, 3, 4]) -> 0
 def sum13(nums):
-  if 13 in nums:
-    k = nums.index(13)
-    return sum(nums[:k])
-  return sum(nums)
+  return
 
 
 # K. has22 #
@@ -136,11 +98,7 @@ def sum13(nums):
 # has22([1, 2, 1, 2]) -> False
 # has22([2, 1, 2]) -> False
 def has22(nums):
-  nums = str(nums)
-  if '2, 2' in nums:
-    return True
-  else:
-    return False
+  return
 
 
 # L. soma_na_lista #
@@ -152,7 +110,7 @@ def has22(nums):
 # soma_na_lista(4, [2, 2, 2, 2]) -> False
 # soma_na_lista(4, [2, 2, 1, 3]) -> True
 def soma_na_lista(n, lista):
-  return n in [x + y for x in lista for y in lista if x != y]
+  return
 
 # M.Difícil: Fila de tijolos sem usar loops #
 # queremos montar uma fila de tijolos de um tamanho denominado meta
@@ -163,10 +121,7 @@ def soma_na_lista(n, lista):
 # fila_tijolos(3, 1, 9) -> False
 # fila_tijolos(3, 2, 10) -> True
 def fila_tijolos(n_peq, n_gra, meta):
-  if n_peq >= meta % 5 and n_peq + 5 * n_gra >= meta:
-    return True
-  else:
-    return False
+  return
 
 # Provided simple test() function used in main() to print
 # what each function returns vs. what it's supposed to return.
